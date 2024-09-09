@@ -22,6 +22,8 @@ hr {
   color: #ddd;
 }
 
+.description_container{ display:flex; align-items:center; gap:20px;}
+
 /* code */
 pre {
   border: 1px solid #ddd;
