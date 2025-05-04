@@ -1,5 +1,9 @@
 body,p,h1,h2 {
   font-family: "Spectral", Optima, Candara, Calibri, Arial, sans-serif;
+  color: rgb(175, 176, 177);
+}
+a{
+  color: rgb(138, 180, 248);
 }
 code {
   font-family: "Spectral", Monaco, monospace;
