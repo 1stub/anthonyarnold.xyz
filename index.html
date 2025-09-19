@@ -7,46 +7,99 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">    
   </head>
 
   <body>
-    <nav>
-    <ul class="menu">
-      <li><a href="index">home</a></li>
-      <li><a href="info/about">about me</a></li>
-      <li><a href="projects/projects">projects</a></li>
-    </ul>
     <hr>
-    </nav>
-    <h2 id="Anthony Arnold">Anthony Arnold</h2>
-<p><em>20 - infj-t</em></p>
 
+    <div class="description_container" style="display: flex; flex-direction: row; gap: 20px; align-items: flex-start;">
+      <div style="flex: 1;">
+        <h2 id="Anthony Arnold">Anthony Arnold</h2>
+        <p><em>20 - infj-t</em></p>
+        <p>Undergraduate CS student. Interested in programming languages, compilers, emulation, and probably other stuff. Normally you can find me programming, climbing, or <a href="https://bookmeter.com/users/1313636">reading...</a></p>
+      </div>
+      <div style="flex: 0 0 auto;">
+        <img src="./me2025_cropped.jpeg" alt="Anthony Arnold" style="width:200px; height:auto; border-radius:50%; border:2px solid #555;">
+      </div>
+    </div>
+  
+    <h3 class="title">Publications</h3>
+    <table>
+      <tr>
+        <td class="date"><i>In Review</i></td>
+        <td class="papers">
+          <div>
+            <span>
+              <strong>Catalpa: GC for a Low-Variance Software Stack</strong> [<a href="https://arxiv.org/abs/2509.13429" target="_blank">arXiv</a> | <a href="https://arxiv.org/pdf/2509.13429">pdf</a>]
+              <br>
+              Anthony Arnold and Mark Marron
+              <br>
+            </span>
+          </div>
+        </td>
+      </tr>
+    </table>
 
-<ul>
-  <li>
-    <span class="date">2024/08/12</span>
-    <a href="posts/languages">How to Learn Literally Any Language</a>
-  </li>
-  <li>
-    <span class="date">2024/05/17</span>
-    <a href="posts/sophomore">Sophomore Year Retrospecitve</a>
-  </li>
-  <li>
-    <span class="date">2024/03/11</span>
-    <a href="posts/welcome">Welcome</a>
-  </li>
-</ul>
+    <style>
+      .title {
+        margin-top: 0;
+        margin-bottom: 0px;
+        padding: 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 10px 0;
+        border: none;
+      }
+      .date {
+        vertical-align: top;
+        padding-right: 15px;
+        font-weight: bold;
+        white-space: nowrap;
+      }
+      .papers {
+        vertical-align: top;
+      }
+      .papers div {
+        margin: 0;
+        padding: 0;
+      }
+      .papers span {
+        line-height: 1.4;
+        font-size: 14px;
+      }
+      .papers br {
+        margin-bottom: 3px;
+        display: block;
+        content: "";
+      }
+    </style>
 
-  <footer>
-  <hr>
-  <a href="https://github.com/1stub">github</a> 
-  <a href = "https://www.linkedin.com/in/anthony-arnold-833638264/">linkedin</a>
-  <a href = "mailto:ajar231@uky.edu">email</a>
+    <h3 class="title">Blog</h3>
+    <ul>
+      <li>
+        <span class="date">2024/08/12</span>
+        <a href="posts/languages">How to Learn Literally Any Language</a>
+      </li>
+      <li>
+        <span class="date">2024/05/17</span>
+        <a href="posts/sophomore">Sophomore Year Retrospecitve</a>
+      </li>
+      <li>
+        <span class="date">2024/03/11</span>
+        <a href="posts/welcome">Welcome</a>
+      </li>
+    </ul>
 
-  </footer>
+    <footer>
+    <hr>
+    <a href="https://github.com/1stub">github</a> 
+    <a href = "https://www.linkedin.com/in/anthony-arnold-833638264/">linkedin</a>
+    <a href = "mailto:ajar231@uky.edu">email</a>
+    </footer>
     
   </body>
-
 </html>
