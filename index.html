@@ -13,22 +13,21 @@
 
   <body>
     <hr>
-
-    <div class="description_container" style="display: flex; flex-direction: row; gap: 10px; align-items: center;">
-      <div style="flex: 1;">  
-      <h2 id="Anthony Arnold" style="margin-bottom: 0px;">Anthony Arnold</h2>
-      <p style="margin-top: 0; margin-bottom: 8px;"><em>21 - infj-t</em></p>
-        <p>Hi! I think computers are neat and doing computer makes me very happy. My computing interests seem to be constantly evolving, but the general theme is
-			programming languages, compilers and computer architecture. I am involved in the <a href="https://github.com/BosqueLanguage/BosqueCore">Bosque</a> project where I created the new 
-			runtime (mainly the GC) under the guidance of <a href="https://engr.uky.edu/people/mark-marron">Mark Marron</a>. In order to keep sane, I tend to spend my free time creating emulators; so far I have emulated 
-			<a href="https://github.com/1stub/chip8">chip-8</a>, <a href="https://github.com/1stub/gb">gameboy</a> and I have a special more sophisticated 
-			emulator in the works, but I don't feel it's mature enough to share with the world just yet. If I am not doing computer, you could 
-			normally find me <a href="https://bookmeter.com/users/1313636">reading</a>, climbing rocks (often plastic or wooden), or watching critters go about their day outside my window.
-      </div>
-      <div style="flex: 0 0 auto;">
-        <img src="./media/me2025_cropped.jpeg" alt="Anthony Arnold" style="width:200px; height:auto; border-radius:50%; border:2px solid #555;">
-      </div>
-    </div>
+    <h2 id="Anthony Arnold" style="margin-bottom: 0px;">Anthony Arnold</h2>
+	<div class="description_container">
+	  <div class="intro-text">  
+		<p>Hi! I think computers are neat and doing computer makes me very happy. My computing interests seem to be constantly evolving, but the general theme is
+		  programming languages, compilers and computer architecture. I am involved in the <a href="https://github.com/BosqueLanguage/BosqueCore">Bosque</a> project where I created the new 
+		  runtime (mainly the GC) under the guidance of <a href="https://engr.uky.edu/people/mark-marron">Mark Marron</a>. In order to keep sane, I tend to spend my free time creating emulators; so far I have emulated 
+		  <a href="https://github.com/1stub/chip8">chip-8</a>, <a href="https://github.com/1stub/gb">gameboy</a> and I have a special more sophisticated 
+		  emulator in the works, but I don't feel it's mature enough to share with the world just yet. If I am not doing computer, you could 
+		  normally find me <a href="https://bookmeter.com/users/1313636">reading</a>, climbing rocks (often plastic or wooden), or watching critters go about their day outside my window.
+		</p>
+	  </div>
+	  <div class="profile-image">
+		<img src="./media/me2025_cropped.jpeg" alt="Anthony Arnold" style="width:200px; height:auto; border-radius:50%; border:2px solid #555;">
+	  </div>
+	</div>
   
     <h3 class="title">Publications</h3>
     <table>
@@ -91,6 +90,32 @@
         display: block;
         content: "";
       }
+		.description_container {
+		  display: flex;
+		  flex-direction: row;
+		  gap: 10px;
+		  align-items: center;
+		}
+		.intro-text {
+		  flex: 1;
+		}
+		.profile-image {
+		  flex: 0 0 auto;
+		}
+		@media (max-width: 600px) {
+		  .description_container {
+			flex-direction: column;
+			align-items: center;
+		  }
+
+		  .profile-image {
+			order: -1; /* image moves before intro text */
+		  }
+
+		  .profile-image img {
+			width: 150px;
+		  }
+		}
     </style>
 
     <h3 class="title">Blog</h3>
